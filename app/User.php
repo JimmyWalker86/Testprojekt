@@ -29,7 +29,7 @@ class User extends Authenticatable
 
     public function phones()
     {
-        return $this->hasMany('App\Phone', 'phone_id');
+        return $this->hasMany('App\Phone', 'user_id');
     }
 
 }

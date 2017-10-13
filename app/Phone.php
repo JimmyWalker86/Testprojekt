@@ -8,5 +8,10 @@ class Phone extends Model
 {
     protected $table = 'phones';
 
-     protected $fillable = ['number'];
+    protected $fillable = ['number'];
+
+    public function user()
+    {
+        return $this->belongsTo('App\User', 'user_id');
+    }
 }

@@ -12,7 +12,7 @@ class PhoneController extends Controller
 {
     public function index(Phone $phone)
     {
-        $phone = $phone::create(['number' => '017736772771']);
+        $phone = new Phone(['number' => '017736772771']);
 
         $user = User::findOrFail(1);
         $user->phones()->save($phone);
