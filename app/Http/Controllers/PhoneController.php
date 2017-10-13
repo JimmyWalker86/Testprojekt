@@ -8,6 +8,9 @@ use Illuminate\Http\Response;
 use App\Phone;
 use App\User;
 
+/**
+ * Basic controlling things for phones
+ */
 class PhoneController extends Controller
 {
     public function index(Phone $phone)
