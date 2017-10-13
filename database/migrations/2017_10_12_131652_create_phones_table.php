@@ -14,7 +14,13 @@ class CreatePhonesTable extends Migration
     public function up()
     {
         Schema::create('phones', function (Blueprint $table) {
+
+            // relations
+            $table->string('phone_id')->nullable();
+            
             $table->increments('id');
+            $table->string("number");
+            $table->timestamps();
         });
     }
 
